@@ -41,7 +41,7 @@ class MainViewController: UIViewController, UITableViewDataSourcePrefetching {
         viewModel.getTrendingMovies()
     }
     
-    private func didGetError(_ message: String?) {
+    private func didGetError(_ message: String?) -> Void {
         DispatchQueue.main.async { [weak self] in
             self?.indicatorView.stopAnimating()
             self?.popupAlert(title: "Error", message: message ?? "Error")

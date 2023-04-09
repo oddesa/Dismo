@@ -19,6 +19,8 @@
 		FA35FE05294F8EB4007E1F62 /* MovieInfoViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35FE04294F8EB4007E1F62 /* MovieInfoViewModelTest.swift */; };
 		FA35FE08294F8F09007E1F62 /* MockDismoServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35FE07294F8F09007E1F62 /* MockDismoServices.swift */; };
 		FA35FE0D294F92F3007E1F62 /* JSONDecoderEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35FE0C294F92F3007E1F62 /* JSONDecoderEncoder.swift */; };
+		FA7AEE4129AC67CF00468195 /* FloatingLabelTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AEE4029AC67CF00468195 /* FloatingLabelTextfield.swift */; };
+		FA7AEE4329AC689700468195 /* DemoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7AEE4229AC689700468195 /* DemoStoryboard.storyboard */; };
 		FAC0BCCC294C79E70063425B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0BCCB294C79E70063425B /* AppDelegate.swift */; };
 		FAC0BCCE294C79E70063425B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0BCCD294C79E70063425B /* SceneDelegate.swift */; };
 		FAC0BCD0294C79E70063425B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0BCCF294C79E70063425B /* MainViewController.swift */; };
@@ -69,6 +71,8 @@
 		FA35FE04294F8EB4007E1F62 /* MovieInfoViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoViewModelTest.swift; sourceTree = "<group>"; };
 		FA35FE07294F8F09007E1F62 /* MockDismoServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDismoServices.swift; sourceTree = "<group>"; };
 		FA35FE0C294F92F3007E1F62 /* JSONDecoderEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderEncoder.swift; sourceTree = "<group>"; };
+		FA7AEE4029AC67CF00468195 /* FloatingLabelTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelTextfield.swift; sourceTree = "<group>"; };
+		FA7AEE4229AC689700468195 /* DemoStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DemoStoryboard.storyboard; sourceTree = "<group>"; };
 		FAC0BCC8294C79E70063425B /* DisMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC0BCCB294C79E70063425B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC0BCCD294C79E70063425B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +164,15 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		FA7AEE3F29AC67B800468195 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AEE4029AC67CF00468195 /* FloatingLabelTextfield.swift */,
+				FA7AEE4229AC689700468195 /* DemoStoryboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FAC0BCBF294C79E70063425B = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +237,7 @@
 		FAC0BCFD294C7F3A0063425B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FA7AEE3F29AC67B800468195 /* Views */,
 				98A49AC3294DBC000035D8E3 /* ViewControllers */,
 				FAC0BCFF294C7F760063425B /* Helpers */,
 				FAC0BCFE294C7F410063425B /* Assets */,
@@ -413,6 +427,7 @@
 			files = (
 				FAC0BCD8294C79E90063425B /* LaunchScreen.storyboard in Resources */,
 				FAC0BCD5294C79E90063425B /* Assets.xcassets in Resources */,
+				FA7AEE4329AC689700468195 /* DemoStoryboard.storyboard in Resources */,
 				FAC0BCD3294C79E70063425B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +537,7 @@
 				FAC0BCCC294C79E70063425B /* AppDelegate.swift in Sources */,
 				98A49AC9294DCEE20035D8E3 /* MovieDetailCache.swift in Sources */,
 				98A49AC7294DC11F0035D8E3 /* MovieTrailer.swift in Sources */,
+				FA7AEE4129AC67CF00468195 /* FloatingLabelTextfield.swift in Sources */,
 				FAC0BCCE294C79E70063425B /* SceneDelegate.swift in Sources */,
 				FAC0BD02294C80A40063425B /* NetworkingService.swift in Sources */,
 				FAC0BD16294C8B6C0063425B /* TrendingMovieResponse.swift in Sources */,
@@ -699,7 +715,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SAJ55939VY;
+				DEVELOPMENT_TEAM = HMMWHN78KV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DisMo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -713,7 +729,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jehnsen.DisMo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jehnsen.DisMo.kane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -729,7 +745,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SAJ55939VY;
+				DEVELOPMENT_TEAM = HMMWHN78KV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DisMo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -743,7 +759,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jehnsen.DisMo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jehnsen.DisMo.kane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

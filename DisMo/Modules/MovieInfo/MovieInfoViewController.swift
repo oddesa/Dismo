@@ -197,7 +197,7 @@ class MovieInfoViewController: UIViewController {
             .subscribe(onNext: { [weak self] response in
                 let trailerKey = response?.officialTrailerKey
                 DispatchQueue.main.async { [weak self] in
-                    self?.playImageView.isHidden = !(trailerKey != nil)
+                    self?.playImageView.isHidden = (trailerKey == nil)
                 }
             })
             .disposed(by: disposeBag)
